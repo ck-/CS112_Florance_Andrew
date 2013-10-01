@@ -1,4 +1,3 @@
-
 package week05hw;
 
 /**
@@ -64,3 +63,4 @@ public class Week05hw {
        while(play==1);
     }
 }
+// Good
