@@ -28,32 +28,43 @@ public class Week05hw {
        int weapon = userInput.nextInt();
        
        //If player chooses rock
+      
        if (weapon==1){
            if (ranWeapon==3)
                System.out.println("You Win.");
            else if(ranWeapon==2)
                System.out.println("You Lose");
-           else
+           else if (ranWeapon==1)
                    System.out.println("Tied!");
+           else
+           System.out.println("Invalid input please try again.");
        }
+       
+       
        //If player chooses paper.
         if (weapon==2){
            if (ranWeapon==1)
                System.out.println("You Win.");
            else if(ranWeapon==3)
                System.out.println("You Lose");
-           else
+           else if(ranWeapon==2)
                    System.out.println("Tied!");
+           else
+           System.out.println("Invalid input please try again.");
        }
+        
         //If player chooses scissors.
          if (weapon==3){
            if (ranWeapon==2)
                System.out.println("You Win.");
            else if(ranWeapon==1)
                System.out.println("You Lose");
-           else
+           else if(ranWeapon==3)
                    System.out.println("Tied!");
+           else
+           System.out.println("Invalid input please try again.");
        }
+       
          //Ask if user wants to play again. if not break.
         System.out.println("Do you want to play again? 1 for yes 2 for no.");
         play = userInput.nextInt();
