@@ -93,14 +93,14 @@ public class Week06hw {
            else
            JOptionPane.showMessageDialog(null,"Invalid input please try again.");
        }
-         
+         //If the game is over before the number of times wanted to play is up then break.
         if (winning>done)
             break;
         if (losing>done)
             break;
          }
        while(y>=i++);
-         
+         //decide if they lost won or tied.
   if (winning>losing)
             JOptionPane.showMessageDialog(null,"You're the winner!");
         else if (losing>winning)
