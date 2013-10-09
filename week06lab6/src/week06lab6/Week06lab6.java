@@ -18,7 +18,7 @@ public class Week06lab6 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-         int play;
+         int play=0;
          int winning= 0;
          int losing= 0;
          int i = 0;
@@ -46,10 +46,14 @@ public class Week06lab6 {
        //If player chooses rock
       
        if (weapon==1){
-           if (ranWeapon==3)
+           if (ranWeapon==3){
                System.out.println("You Win.");
-           else if(ranWeapon==2)
+               winning=winning+1;
+           }
+           else if(ranWeapon==2){
                System.out.println("You Lose");
+               losing=losing+1;
+           }
            else if (ranWeapon==1)
                    System.out.println("Tied!");
            else
@@ -63,8 +67,10 @@ public class Week06lab6 {
                System.out.println("You Win.");
                winning= winning + 1;
            }
-           else if(ranWeapon==3)
+           else if(ranWeapon==3){
                System.out.println("You Lose");
+               losing=losing+1;
+           }
            else if(ranWeapon==2)
                    System.out.println("Tied!");
            else
@@ -96,10 +102,10 @@ public class Week06lab6 {
        while(play>=i++);
          
   if (winning>losing)
-            System.out.println("You're the winner!");
+            System.out.printf("You're the winner! You won %d times and the computer won times %d", winning, losing);
         else if (losing>winning)
-            System.out.println("You lost!");
+            System.out.printf("You lost!You won %d times and the computer won times %d", winning, losing);
         else 
-            System.out.println("You tied!");
+            System.out.printf("You tied!You won %d times and the computer won %d times", winning, losing);
     }
 }
